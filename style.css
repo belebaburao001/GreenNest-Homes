@@ -22,6 +22,20 @@ html, body{
     max-width: 1550px;
     margin: 0 auto;
 }
+#btn{
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 10px;
+    background: #66BB6A;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#btn:hover{
+    background: #5ba65f;
+}
 
 /* === NavBar === */
 nav{
@@ -54,7 +68,7 @@ nav #nav-links li a{
     transition: all 0.3s ease;
 }
 nav #nav-links li a:hover{
-    color: #1d9931;
+    color: #66BB6A;
 }
 nav #nav-links i{
     display: none;
@@ -81,7 +95,7 @@ nav #nav-links i{
         display: block;
         position: absolute;
         top: 0;
-        right: -50%;
+        right: -100%;
         background: #000;
         width: 50%;
         height: 100vh;
@@ -126,5 +140,91 @@ nav #nav-links i{
         font-size: 1.875;
         position: absolute;
         top: 2%;
+    }
+}
+
+/* === Hero Section === */
+.hero-section{
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0 2.5rem;
+}
+.hero-section h1{
+    width: 49vw;
+    font-size: 3.125rem;
+    margin-bottom: 10px;
+}
+.hero-section p{
+    width: 49vw;
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+}
+.hero-img{
+    width: 700px;
+    height: 70vh;
+}
+.hero-img img{
+    width: 100%;
+    /* height: calc(90vh - 80px); */
+    height: 100%;
+    border-radius: 10px;
+}
+@media (max-width: 1000px) {
+    .hero-section h1{
+        width: 44vw;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .hero-section p{
+        width: 44vw;
+        font-size: 1.125rem;
+        margin-bottom: 15px;
+    }
+    .hero-img{
+        width: 800px;
+        height: 70vh;
+    }
+}
+@media (max-width: 830px) {
+    .hero-section{
+        flex-direction: column;
+        padding: 0 1.25rem;
+        gap: 20px;
+    }
+    .hero-section .text-content{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .hero-section h1{
+        width: 100%;
+        font-size: 2.7rem;
+        margin-bottom: 10px;
+    }
+    .hero-section p{
+        width: 100%;
+        font-size: 1.125rem;
+        margin-bottom: 15px;
+    }
+    .hero-img{
+        width: 90vw;
+        /* height: 70vh; */
+    }
+}
+@media (max-width: 425px) {
+    .hero-section{
+        padding: 0 0.625rem;
+    }
+    .hero-section h1{
+        width: 100%;
+        font-size: 2.188rem;
+        margin-bottom: 10px;
+    }
+    .hero-section p{
+        width: 100%;
+        font-size: 1.063rem;
+        margin-bottom: 15px;
     }
 }
