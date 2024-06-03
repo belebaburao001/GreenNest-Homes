@@ -55,6 +55,7 @@ nav #logo img{
 }
 nav i{
     display: none;
+    cursor: pointer;
 }
 nav #nav-links{
     display: flex;
@@ -62,6 +63,7 @@ nav #nav-links{
     overflow-x: hidden;
 }
 nav #nav-links li a{
+    display: block;
     font-size: 1.125rem;
     color: #000;
     font-weight: 600;
@@ -158,7 +160,7 @@ nav #nav-links i{
     margin-bottom: 10px;
 }
 .hero-section p{
-    width: 49vw;
+    width: 45vw;
     font-size: 1.125rem;
     margin-bottom: 15px;
 }
@@ -168,7 +170,6 @@ nav #nav-links i{
 }
 .hero-img img{
     width: 100%;
-    /* height: calc(90vh - 80px); */
     height: 100%;
     border-radius: 10px;
 }
